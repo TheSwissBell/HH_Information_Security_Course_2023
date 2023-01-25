@@ -105,6 +105,6 @@ Also the magic number was in hidden an input.
 I had first to install ZAP Proxy.
 I follewed a tutorial on YouTube : https://www.youtube.com/watch?v=a6_TprVx7LE
 
-And the documention of ZAP (getting-sarted): https://www.youtube.com/watch?v=a6_TprVx7LE
+And the documention of ZAP (getting-sarted): https://www.zaproxy.org/getting-started/
 
 Then I was stuck
