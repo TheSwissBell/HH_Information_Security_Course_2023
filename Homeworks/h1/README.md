@@ -86,3 +86,17 @@ I installed Debian on a VirtualBox machine following Tero Karvinen tutorial (202
 ## c) WebGoat. Install WebGoat practice target. 
 I installed WebGoat on my brand new Virtual Debian machine following Tero Karvinen tutorial (2020):
 https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/
+
+## d) Hacker warmup. Solve these tasks on WebGoat
+
+### General: HTTP Basics
+The first task was to find if the request after submiting the form was an POST or GET HTTP request.
+
+I openned the Developer Tools of my browseer (Inspector) and saw that it was a POST
+
+Also the magic number was in hidden an input.
+
+![WebGoat HTTP](screenshots/WebGoat_HTTP.png)
+
+
+### General: Developer tools
