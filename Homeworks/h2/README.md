@@ -32,7 +32,7 @@ To prevent security misconfiguration, organizations should follow best practices
 + Regularly checking component-related security advisories and bulletins can help in staying informed about any potential security risks.
 + Implementing secure development practices and regularly reviewing the security of the entire application can help in mitigating these risks.
 
-[More details](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ "Hypertext link")
+[More details](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/ "Hypertext link")
 
 #### A03:2021-Injection
 + Injection flaws are one of the most common and dangerous types of attacks
@@ -42,7 +42,7 @@ To prevent security misconfiguration, organizations should follow best practices
 + Injection attacks can be prevented by implementing input validation and sanitization, using parameterized queries, and restricting access to sensitive data
 + It is also important to monitor and detect possible injection attacks, and to have a robust incident response plan in place to quickly respond to any incidents that may occur.
 
-[More details](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ "Hypertext link")
+[More details](https://owasp.org/Top10/A03_2021-Injection/ "Hypertext link")
 
 ## [Darkent Diaries](https://darknetdiaries.com/ "All the episodes") Podcast: [EP 77: OLYMPIC DESTROYER](https://darknetdiaries.com/transcript/77/ "All the episodes")
 
