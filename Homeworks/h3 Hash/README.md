@@ -14,7 +14,7 @@ See instructions: https://terokarvinen.com/2023/information-security-2023/
 + Not a protocol but used in many of them in cryptographic systems.
 + From a mathematical point of view. Neither the existence of one-way functions nor the feasibility of their construction are proven
 + A metaphor is like when you brake a plate. It's fast to break it but take a lot of time to repaire it and put back togehter all the pieces in their exact place.
-![broken plate example](pictures/broken_plate.jpg)
+![broken plate example](Pictures/broken_plate.jpg)
 
 Photo by CHUTTERSNAP on [Unsplash](https://unsplash.com/photos/u3ZDnIMCfIs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
@@ -22,7 +22,7 @@ Photo by CHUTTERSNAP on [Unsplash](https://unsplash.com/photos/u3ZDnIMCfIs?utm_s
 
 
 + Trapdoor one-way function exist. It's a special type. If you know _the secret_ it's easy to compute in the reverese direction. Like for example a watch. It's easy to remove and deasamble all the small pieces but very hard to put them back. Except if you have the assembly instructions (and watchmaking skills).  
-![broken plate example](pictures/watch_pieces.jpg)
+![broken plate example](Pictures/watch_pieces.jpg)
 
 
 
@@ -58,7 +58,7 @@ First we have to identify the hash type.
 
 ```hashid -m 8eb8e307a6d649bc7fb51443a06a216f```
 
-![hashid -m ](pictures/hashcat_1.png) 
+![hashid -m ](Pictures/hashcat_1.png) 
 
 I get a result that it's probably MD2, MD5 or MD4 hash type.
 
@@ -69,9 +69,9 @@ It means that in the command I've to use the parameters -m **0**
 ```hashcat -m 0 '8eb8e307a6d649bc7fb51443a06a216f' rockyou.txt -o solved```
 
 Working...
-![hashid -m ](pictures/hashcat_2.png) 
+![hashid -m ](Pictures/hashcat_2.png) 
 It's cracked!
-![hashid -m ](pictures/hashcat_3.png) 
+![hashid -m ](pPctures/hashcat_3.png) 
 
 I specified that I wanted the result in a file called solved
 
@@ -80,7 +80,7 @@ Let's open it:
 `cat solved`
 
 We can see that this hash was generated from the password _february_
-![hashid -m ](pictures/hashcat_4.png) 
+![hashid -m ](Pictures/hashcat_4.png) 
 
 ## c) Compile John the Ripper, Jumbo version. Karvinen 2023: Crack File Password With John.
 
@@ -102,11 +102,11 @@ Then I moved into the cloned repository
 
 Detect the environment and create a Malefile for the next command
 `./configure`
-![end of configure command](pictures/john_1.png) 
+![end of configure command](Pictures/john_1.png) 
 
 `make -s clean && make -sj4`
 
-![make](pictures/john_2.png) 
+![make](Pictures/john_2.png) 
 
 `cd ..`
 
@@ -115,7 +115,7 @@ Detect the environment and create a Malefile for the next command
 I launched it
 
 `./john`
-![make](pictures/john_3.png) 
+![make](Pictures/john_3.png) 
 
 ## d) Crack a zip file password
 I downloaded the ZIP sample file on [Tero Karvinen website](https://terokarvinen.com/2023/crack-file-password-with-john/tero.zip)
@@ -126,17 +126,17 @@ I downloaded the ZIP sample file on [Tero Karvinen website](https://terokarvinen
 Extract the hash in a file
 
 `./zip2john tero.zip >tero.zip.hash`
-![hash](pictures/john_4.png) 
+![hash](Pictures/john_4.png) 
 
 Cracking the ZIP password
 
 `./john tero.zip.hash`
 
 We can see that the password is _butterfly_
-![crack](pictures/john_5.png) 
+![crack](Pictures/john_5.png) 
 
 Now that I have the password I can unzip it!
-![unzip](pictures/john_6.png) 
+![unzip](Pictures/john_6.png) 
 
 
 n) Voluntary: create a password protected file other than ZIP. Crack the password. How many formats can you handle?
