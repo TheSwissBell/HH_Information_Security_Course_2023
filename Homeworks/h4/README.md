@@ -97,6 +97,41 @@ By default, locally on the user's computer. But he can also choose the store the
 
 ## a) Demonstrate the use of a password manager.
 
+Opening the database with the master key password
+![](pictures/KeePass2_001.png) 
+
+Adding an new entry
+![](pictures/KeePass2_002.png)
+
+Add title and username to the password
+![](pictures/KeePass2_003.png)
+
+Password Generator settings
+![](pictures/KeePass2_004.png)
+
+Preview of passwords
+![](pictures/KeePass2_005.png)
+
+Save
+![](pictures/KeePass2_006.png)
 
 
 ## b) Encrypt and decrypt a message (you can use any tool you want, gpg is one option)
+
+Tool: gpg
+
+gpg --symmetric test.txt
+
+![](pictures/gpg_001.png)
+
+
+![](pictures/gpg_002.png)
+
+
+![](pictures/gpg_003.png)
+
+gpg --decrypt test.txt.gpg
+![](pictures/gpg_004.png)
+
+
+Source: https://blog.knoldus.com/how-to-encrypt-and-decrypt-files-using-gpg/
