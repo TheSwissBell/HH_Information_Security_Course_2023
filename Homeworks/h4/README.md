@@ -64,3 +64,39 @@ Link-by-link encryption protects against attacks that occur between nodes, but e
 ### 10.4 ENCRYPTING DATA FOR STORAGE
 
 + Driver-Level vs. File-Level Encryption
+
+
+## y) Choose a password manager. Explain:
+
+My Choice: KeyPass 2
+
+### What treaths does it protect against?
+
+It protect against brut force attack with weak-passwords. Also it protect password reuse. We can have different password for each services/website. So if one website got hacked our others account are not leaked
+
+### What information is encrypted, what's not?
+
+The password are.
+The usernames, e-mails and notes aren't
+
+###  What's the license? How would you describe license's effects or categorize it?
+
+KeePass 2 is released under the Open Source GPL (General Public License) version 2.0.
+
+### Where is the data stored? If in "the cloud", which country / juristiction / which companies? If on local disk, where?
+
+By default, locally on the user's computer. But he can also choose the store the master database on it's third-pary cloud services such as Dropbox, OneDrive or google Drive.  the data will be stored on the servers of those companies in the countries and jurisdictions where those servers are located.
+
+###  How is the data protected?
+
++ With encrypetion (AES)
++ Master password
++ MFA (Two factor authentifaction)
++ Auto-lock of the databse
++ Clipboard security. If we copy a password. It's delete automatically after some seconds/minutes)
+
+## a) Demonstrate the use of a password manager.
+
+
+
+## b) Encrypt and decrypt a message (you can use any tool you want, gpg is one option)
